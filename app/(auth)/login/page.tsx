@@ -29,21 +29,6 @@ export default function LoginPage() {
     }
   }
 
-  const handleQuickLogin = async () => {
-    setIsLoading(true)
-    try {
-      await signIn('demo@example.com', 'demo123')
-      toast({
-        title: 'Login realizado!',
-        description: 'Bem-vindo ao TRM Toolbox.',
-      })
-    } catch (error) {
-      console.error('Quick login error:', error)
-    } finally {
-      setIsLoading(false)
-    }
-  }
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-muted/50">
       <Card className="w-full max-w-md p-8">
@@ -92,14 +77,6 @@ export default function LoginPage() {
               )}
             </Button>
           </form>
-          <Button 
-            variant="outline" 
-            className="w-full"
-            onClick={handleQuickLogin}
-            disabled={isLoading}
-          >
-            Login Rápido (Temporário)
-          </Button>
           <div className="flex flex-col items-center gap-4 text-sm">
             <Link
               href="/forgot-password"
