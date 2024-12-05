@@ -16,10 +16,7 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-4">
             <Link href="/login">
-              <Button variant="ghost">Login</Button>
-            </Link>
-            <Link href="/register">
-              <Button>Criar Conta</Button>
+              <Button>Entrar</Button>
             </Link>
           </div>
         </div>

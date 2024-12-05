@@ -18,11 +18,10 @@ export function CTASection() {
           <h2 className="text-3xl font-bold">Comece sua transformação hoje</h2>
           <p className="text-primary-foreground/80">
             Aproveite todas as ferramentas necessárias para impulsionar seu negócio.
-            Comece gratuitamente!
           </p>
-          <Link href="/register">
+          <Link href="/login">
             <Button size="lg" variant="secondary" className="group">
-              Criar Conta Gratuita
+              Fazer Login
               <Zap className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
