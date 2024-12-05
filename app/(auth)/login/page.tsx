@@ -7,7 +7,8 @@ import { Input } from '@/components/ui/input'
 import { Card } from '@/components/ui/card'
 import { useToast } from '@/components/ui/use-toast'
 import Link from 'next/link'
-import { Rocket, Loader2 } from 'lucide-react'
+import Image from 'next/image'
+import { Loader2 } from 'lucide-react'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -34,7 +35,6 @@ export default function LoginPage() {
       <Card className="w-full max-w-md p-8">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center space-x-2">
-            <Rocket className="h-6 w-6" />
             <span className="text-2xl font-bold">TRM Toolbox</span>
           </div>
           <div className="text-center space-y-2">

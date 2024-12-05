@@ -18,7 +18,14 @@ export function Header() {
   return (
     <header className="h-14 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="h-full flex items-center justify-between px-8 lg:px-10">
-        <h1 className="font-semibold">Bem-vindo, {user?.name || 'Usuário'}</h1>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 mr-4">
+            <span className="font-bold">TRM Toolbox</span>
+          </div>
+          <span className="text-muted-foreground">
+            Bem-vindo, {user?.name || 'Usuário'}
+          </span>
+        </div>
         <div className="flex items-center space-x-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
-import { TRMLogo } from '@/components/trm-logo'
 import {
   LayoutDashboard,
   Wallet,
@@ -43,7 +42,6 @@ export function Sidebar() {
     <div className="w-64 border-r bg-background">
       <div className="h-14 flex items-center px-4 border-b">
         <div className="flex items-center space-x-2">
-          <TRMLogo className="h-6 w-6" />
           <span className="font-bold">TRM Toolbox</span>
         </div>
       </div>
